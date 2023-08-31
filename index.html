@@ -19,7 +19,7 @@
 
     <!-- search field -->
     <section class="bg-gray-100 p-4 m-4 rounded-xl text-center">
-        <input id="search-field" type="text" placeholder="Search ..." class="input input-bordered input-primary w-full max-w-xs" />
+        <input id="search-field" type="text" placeholder="Search by Brand Name ..." class="input input-bordered input-primary w-full max-w-xs" />
         <button class="btn btn-primary ml-5 text-white" onclick="handleSearch()">Search</button>
     </section>
 
@@ -39,6 +39,22 @@
             <button class="btn btn-primary" onclick="handleShowAll()">Show All</button>
         </div>
     </section>
+
+    <!-- show details modals -->
+    <!-- Open the modal using ID.showModal() method -->
+    
+    <dialog id="showModals" class="modal modal-bottom sm:modal-middle">
+    <form method="dialog" class="modal-box">
+        <h3 id="phone-name" class="font-bold text-3xl"></h3>
+        <div id="show-detail-container">
+
+        </div>
+        <div class="modal-action">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+        </div>
+    </form>
+    </dialog>
 </main>
 
 
