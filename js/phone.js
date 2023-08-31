@@ -74,7 +74,7 @@ console.log(phone);
     <p><span class="font-bold">Display Size: </span>${phone?.mainFeatures?.displaySize}</p>
     <p><span class="font-bold">Chipset: </span>${phone?.mainFeatures?.chipSet}</p>
     <p><span class="font-bold">Memory: </span>${phone?.mainFeatures?.memory}</p>
-    <p><span class="font-bold">GPS: </span>${phone?.others?.GPS}</p>
+    <p><span class="font-bold">GPS: </span>${phone?.others?.GPS || 'No GPS Available'}</p>
     <p><span class="font-bold">NFC: </span>${phone?.others?.NFC}</p>
     <p><span class="font-bold">Release Date: </span>${phone?.releaseDate}`
     
