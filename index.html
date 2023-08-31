@@ -12,18 +12,31 @@
 </head>
 <body onload="loadPhone()">
     <header>
-        <h2 class="text-6xl p-5">Hunting Phone</h2>
+        <h2 class="text-6xl p-5 text-primary">Hunting Phone</h2>
     </header>
 
 <main class="container mx-auto mt-8">
 
+    <!-- search field -->
     <section class="bg-gray-100 p-4 m-4 rounded-xl text-center">
         <input id="search-field" type="text" placeholder="Search ..." class="input input-bordered input-primary w-full max-w-xs" />
-        <button class="btn btn-accent ml-5" onclick="handleSearch()">Search</button>
+        <button class="btn btn-primary ml-5 text-white" onclick="handleSearch()">Search</button>
     </section>
 
+
+   
+    
     <section class="w-fit my-0 mx-auto pb-5">
+ <!-- spinner -->
+        <div id="loading-spinner" class="text-center my-32 hidden">
+            <span class="loading loading-ring loading-lg"></span>
+        </div>
+
         <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"> 
+        </div>
+        <!-- show all button -->
+        <div id="show-all-container" class="hidden">
+            <button class="btn btn-primary">Show All</button>
         </div>
     </section>
 </main>
